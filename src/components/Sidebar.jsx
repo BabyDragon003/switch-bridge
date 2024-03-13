@@ -17,7 +17,8 @@ export default function Sidebar() {
         <div className='sidebar-menus'>
             <section className={collapsemenu ? "sidebar mobile-sidebar" : "sidebar collapse"}>
                 <div className="top">
-                    <img src="/images/switch-logo1.png" alt="logo" className='logo' /> <span className='text-gradient'>SWITCH.io</span>
+                    <img src="/images/taos-logo.png" alt="logo" className='logo' />
+                    {/* <span className='text-gradient'>SWITCH.io</span> */}
                     <button className="mobile-menu-close-icon" onClick={() => { setCollapseMenu(!collapsemenu) }}>
                         <img src="/images/close.svg" alt="menu" />
                     </button>

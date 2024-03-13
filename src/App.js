@@ -1,7 +1,6 @@
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import Swap from './pages/Swap';
 import NotFound from './pages/NotFound';
-import LandingPage from './pages/LandingPage';
 
 function App() {
   return (
