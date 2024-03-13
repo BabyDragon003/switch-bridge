@@ -46,6 +46,9 @@ h6 {
     background-attachment: fixed;
     overflow-x: hidden;
 
+    display:flex;
+    flex-direction: column;
+
     .saturn {
         position: fixed;
         bottom: 20px;
@@ -746,7 +749,10 @@ a {
 }
 
 .swap {
-
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
     // padding: 15px 0;
     .right {
         .data {
