@@ -1,8 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react'
-import Sidebar from '../components/Sidebar'
 import { SquidWidget } from '@0xsquid/widget'
+import MenuBar from './MenuBar'
+import Footer from './Footer'
 
-export default function Swap() {
+const Swap = () => {
     const [active, setActive] = useState(1)
     const [settings, setSettings] = useState(false)
     const [currencyOne, setCurrencyOne] = useState(false)
@@ -12,20 +13,20 @@ export default function Swap() {
 
     let myRef = useRef(null);
 
-    const currencyOneTableData = [
-        { image: 'eth.svg', name: 'Ether', value: '10', symbol: 'ETH' },
-        { image: 'eth.svg', name: 'Ether', value: '10', symbol: 'ETH' },
-        { image: 'eth.svg', name: 'Ether', value: '10', symbol: 'ETH' },
-        { image: 'eth.svg', name: 'Ether', value: '10', symbol: 'ETH' },
-        { image: 'eth.svg', name: 'Ether', value: '10', symbol: 'ETH' },
-    ]
-    const currencyTwoTableData = [
-        { image: 'btc.svg', name: 'BTC', value: '10', symbol: 'BTC' },
-        { image: 'btc.svg', name: 'BTC', value: '10', symbol: 'BTC' },
-        { image: 'btc.svg', name: 'BTC', value: '10', symbol: 'BTC' },
-        { image: 'btc.svg', name: 'BTC', value: '10', symbol: 'BTC' },
-        { image: 'btc.svg', name: 'BTC', value: '10', symbol: 'BTC' },
-    ]
+    // const currencyOneTableData = [
+    //     { image: 'eth.svg', name: 'Ether', value: '10', symbol: 'ETH' },
+    //     { image: 'eth.svg', name: 'Ether', value: '10', symbol: 'ETH' },
+    //     { image: 'eth.svg', name: 'Ether', value: '10', symbol: 'ETH' },
+    //     { image: 'eth.svg', name: 'Ether', value: '10', symbol: 'ETH' },
+    //     { image: 'eth.svg', name: 'Ether', value: '10', symbol: 'ETH' },
+    // ]
+    // const currencyTwoTableData = [
+    //     { image: 'btc.svg', name: 'BTC', value: '10', symbol: 'BTC' },
+    //     { image: 'btc.svg', name: 'BTC', value: '10', symbol: 'BTC' },
+    //     { image: 'btc.svg', name: 'BTC', value: '10', symbol: 'BTC' },
+    //     { image: 'btc.svg', name: 'BTC', value: '10', symbol: 'BTC' },
+    //     { image: 'btc.svg', name: 'BTC', value: '10', symbol: 'BTC' },
+    // ]
     const closeActive = () => {
         // if(settings){
         //     setSettings(false)
@@ -42,11 +43,9 @@ export default function Swap() {
     }
     return (
         <div className='swap' onClick={closeActive}>
-            {/* sidebar */}
-            <Sidebar />
-
             {/* main content */}
-            <section className="flex flex-col" >
+            <MenuBar />
+            <section className="flex flex-col pt-5 pb-5" >
                 <div className="flex">
                     <div className="App swap-padding" style={{ "display": "flex", "justify-content": "center" }}>
                         <div
@@ -69,20 +68,20 @@ export default function Swap() {
                                     "style": {
                                         "neutralContent": "#9DA7B1",
                                         "baseContent": "#FFFDFD",
-                                        "base100": "#5a1270",
-                                        "base200": "#22042b",
+                                        "base100": "#1A1A1A",
+                                        "base200": "#26242C",
                                         "base300": "#120417",
                                         "error": "#ED6A5E",
                                         "warning": "#FFB155",
                                         "success": "#2EAEB0",
-                                        "primary": "#AB67CB",
+                                        "primary": "#FE4F4C",
                                         "secondary": "#37394C",
                                         "secondaryContent": "#B2BCD3",
-                                        "neutral": "#36143F",
-                                        "roundedBtn": "90px",
-                                        "roundedCornerBtn": "999px",
-                                        "roundedBox": "20px",
-                                        "roundedDropDown": "20px"
+                                        "neutral": "#000000",
+                                        "roundedBtn": "0px",
+                                        "roundedCornerBtn": "0px",
+                                        "roundedBox": "0px",
+                                        "roundedDropDown": "0px"
                                     },
                                     availableChains: {
                                         source: ["celestia", 1, 56, 137, 43114, 42161, 10, 8453, 59144, 5000, 534352, 250, 1284],
@@ -97,6 +96,9 @@ export default function Swap() {
                     </div>
                 </div>
             </section>
+            <Footer />
         </div>
     )
 }
+
+export default Swap;
