@@ -88,7 +88,7 @@ const Swap = () => {
                                         destination: ["celestia", 1, 56, 137, 43114, 42161, 10, 8453, 59144, 5000, 534352, 250, 1284]
                                     },
                                     collectFees: {
-                                        integratorAddress: "0xB529e98A626107335c634B4a905e8317d2250756",
+                                        integratorAddress: "0x0992Df042be6dE82f157586DdB7FEDDA72195E65",
                                         fee: 30
                                     }
                                 }} />
