@@ -11,7 +11,7 @@ export default function MenuBar() {
         <div className='menu-bar'>
             <img src="/images/taos-logo3.png" className="logo" />
             <div className='title_obj'>
-                <span className='title'>TAOS DEXTENSOR</span>
+                <span className='title'>TAOS DEXTENSOR-V1</span>
             </div>
         </div>
     )

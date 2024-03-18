@@ -53,7 +53,7 @@ const Swap = () => {
                         >
                             <SquidWidget config={
                                 {
-                                    companyName: "SWITCH",
+                                    companyName: "DEXTENSOR",
                                     slippage: 1,
                                     integratorId: "tiagate-swap-widget",
                                     infiniteApproval: false,
