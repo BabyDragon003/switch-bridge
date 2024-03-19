@@ -13,6 +13,11 @@ $green: #00CBA1;
     src: url('Proto Mono Regular.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'Osake';
+    src: url('Osake.ttf') format('truetype');
+}
+
 .tw-w-30 {
     width: 140px !important;
 }
@@ -46,7 +51,7 @@ h6 {
     background-attachment: fixed;
     overflow-x: hidden;
 
-    display:flex;
+    display: flex;
     flex-direction: column;
 
     .saturn {
@@ -251,23 +256,6 @@ a {
         img {
             max-width: 15px;
         }
-    }
-}
-
-.logo {
-    padding-left: 60px;
-    position: relative;
-    width: 150px;
-    height: 60px;
-}
-
-@media only screen and (max-width: 600px) {
-    .logo {
-        padding-left: 20px;
-        position: relative;
-        width: 75px;
-        height: 30px;
-        padding-bottom: 7px;
     }
 }
 
@@ -753,6 +741,7 @@ a {
     flex-direction: column;
     justify-content: space-between;
     min-height: 100vh;
+
     // padding: 15px 0;
     .right {
         .data {
@@ -1230,6 +1219,7 @@ a {
     position: relative;
     display: flex;
     flex-direction: row;
+    align-items: center;
     padding: 10px 0;
     // min-height: 30px;
     border-bottom: 1px solid #7C86A0;
@@ -1237,45 +1227,29 @@ a {
 
 @media only screen and (max-width: 600px) {
     .menu-bar {
-        padding-top: 25px;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        // padding-top: 20px;
     }
 }
 
-.footer {
+.logo {
+    padding-left: 60px;
     position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    gap: 16px;
-    padding: 10px;
-    // min-height: 30px;
-    border-top: 1px solid #7C86A0;
+    width: 52px;
+    height: 52px;
 }
 
-// @media only screen and (max-width: 600px) {
-//     .footer {
-//         padding-top: 10px;
-//     }
-// }
-
-.footer-tg-ico {
-    width: 24px;
-    height: 19.5px;
-}
-
-.footer-reddit-ico {
-    width: 24px;
-    height: 18.5px;
-}
-
-.footer-twitter-ico {
-    width: 20px;
-    height: 20px;
-}
-
-.footer-discord-ico {
-    width: 20px;
-    height: 21px;
+@media only screen and (max-width: 600px) {
+    .logo {
+        padding-left: 18px;
+        position: relative;
+        width: 40px;
+        height: 40px;
+        padding-bottom: 7px;
+    }
 }
 
 .title_obj {
@@ -1289,22 +1263,87 @@ a {
     align-items: center;
 }
 
+@media only screen and (max-width: 600px) {
+    .title_obj {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+}
+
 .title {
     text-transform: uppercase;
     color: #FFFFFF;
-    font-family: "Proto", sans-serif !important;
+    font-family: "Osake", sans-serif !important;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 42px;
+    // padding-top: 14px;
 }
 
 @media only screen and (max-width: 600px) {
     .title {
         text-transform: uppercase;
         color: #FFFFFF;
-        font-family: "Proto", sans-serif !important;
+        font-family: "Osake", sans-serif !important;
         font-weight: bold;
-        font-size: 18px;
+        font-size: 24px;
+        padding-left: 50px;
+        // padding-top: 14px;
     }
+}
+
+.footer {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000000;
+    padding: 16px 55px;
+    border-top: 1px solid #7C86A0;
+}
+
+@media only screen and (max-width: 600px) {
+    .footer {
+        padding: 14px 18px;
+        align-items: center;
+    }
+}
+
+.footer-copyright {
+    font-size: 16px;
+    text-align: center;
+    color: #FFFFFF;
+    font-family: "Osake", sans-serif !important;
+}
+
+@media only screen and (max-width: 600px) {
+    .footer-copyright {
+        font-size: 14px;
+        text-align: center;
+    }
+}
+
+.footer-social-icons {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 20px;
+}
+
+.footer-tg-ico {
+    width: 22px;
+    height: 22px;
+}
+
+.footer-twitter-ico {
+    width: 18px;
+    height: 18px;
 }
 
 .tw-rounded-dropdown {
