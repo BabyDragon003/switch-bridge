@@ -1236,7 +1236,7 @@ a {
 }
 
 .logo {
-    padding-left: 60px;
+    padding: 11px 40px;
     position: relative;
     width: 52px;
     height: 52px;
@@ -1278,7 +1278,7 @@ a {
     text-transform: uppercase;
     color: #FFFFFF;
     font-family: "Osake", sans-serif !important;
-    font-weight: bold;
+    // font-weight: bold;
     font-size: 42px;
     // padding-top: 14px;
 }
@@ -1288,7 +1288,7 @@ a {
         text-transform: uppercase;
         color: #FFFFFF;
         font-family: "Osake", sans-serif !important;
-        font-weight: bold;
+        // font-weight: bold;
         font-size: 24px;
         padding-left: 50px;
         // padding-top: 14px;
@@ -1303,7 +1303,7 @@ a {
     align-items: center;
     justify-content: space-between;
     background-color: #000000;
-    padding: 16px 55px;
+    padding: 14.5px 55px;
     border-top: 1px solid #7C86A0;
 }
 
