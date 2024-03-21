@@ -10,9 +10,11 @@ export default function MenuBar() {
     return (
         <div className='menu-bar'>
             <img src="/images/taos-logo3.png" className="logo" />
-            <div className='title_obj'>
-                <span className='title'>TAOS DEXTENSOR-V1</span>
+            <div className='desktop_title'>
+                TAOS DEXTENSOR-V1
+                {/* <span className='title'>TAOS DEXTENSOR-V1</span> */}
             </div>
+            <a href='https://swapv2.dextensor.ai/' className='switch-button'>GO TO V2</a>
         </div>
     )
 }

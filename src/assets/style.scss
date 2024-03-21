@@ -1219,6 +1219,7 @@ a {
     position: relative;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     padding: 10px 0;
     // min-height: 30px;
@@ -1252,8 +1253,26 @@ a {
     }
 }
 
-.title_obj {
-    position: absolute;
+.mobile_title {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .mobile_title {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        font-size: 24px;
+        font-family: "Osake", sans-serif !important;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+}
+
+.desktop_title {
     top: 0;
     left: 0;
     width: 100%;
@@ -1261,36 +1280,54 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-family: "Osake", sans-serif !important;
+    font-size: 42px;
 }
 
 @media only screen and (max-width: 600px) {
-    .title_obj {
-        position: absolute;
-        top: 0;
-        left: 0;
-        display: flex;
-        align-items: center;
-        height: 100%;
+    .desktop_title {
+        display: none;
     }
 }
 
-.title {
+// .title {
+//     text-transform: uppercase;
+//     color: #FFFFFF;
+//     font-family: "Osake", sans-serif !important;
+//     font-size: 42px;
+//     // padding-top: 14px;
+// }
+
+// @media only screen and (max-width: 600px) {
+//     .title {
+//         text-transform: uppercase;
+//         color: #FFFFFF;
+//         font-family: "Osake", sans-serif !important;
+//         font-size: 24px;
+//         padding-left: 50px;
+//         // padding-top: 14px;
+//     }
+// }
+
+.switch-button {
     text-transform: uppercase;
     color: #FFFFFF;
     font-family: "Osake", sans-serif !important;
     // font-weight: bold;
-    font-size: 42px;
-    // padding-top: 14px;
+    width: 160px;
+    font-size: 22px;
+    padding-right: 40px;
+    z-index: 10;
 }
 
 @media only screen and (max-width: 600px) {
-    .title {
-        text-transform: uppercase;
-        color: #FFFFFF;
-        font-family: "Osake", sans-serif !important;
-        // font-weight: bold;
-        font-size: 24px;
-        padding-left: 50px;
+    .switch-button {
+        display: flex;
+        justify-content: end;
+        font-size: 14px;
+        padding: 20px;
         // padding-top: 14px;
     }
 }

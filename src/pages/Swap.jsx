@@ -46,7 +46,10 @@ const Swap = () => {
             {/* main content */}
             <MenuBar />
             <section className="flex flex-col pt-5 pb-5" >
-                <div className="flex">
+                <div className="flex flex-column">
+                    <div className='mobile_title'>
+                        TAOS DEXTENSOR-V1
+                    </div>
                     <div className="App swap-padding" style={{ "display": "flex", "justify-content": "center" }}>
                         <div
                             style={{ display: "flex", maxWidth: "430px", width: "100%", justifyContent: "center", paddingLeft: "10px", paddingRight: "10px" }}
